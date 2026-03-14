@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>webnyh anna bro??!</title>
+
+<style>
+
+body{
+margin:0;
+font-family: Arial, sans-serif;
+text-align:center;
+color:white;
+}
+
+.screen{
+display:none;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.pink{
+background:#e69ab0;
+}
+
+.black{
+background:black;
+}
+
+h1{
+font-size:40px;
+max-width:900px;
+}
+
+p{
+font-size:30px;
+max-width:900px;
+}
+
+button{
+margin:20px;
+padding:20px 40px;
+font-size:25px;
+border:3px solid white;
+background:transparent;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:white;
+color:black;
+}
+
+.red{
+border-color:red;
+}
+
+.small{
+transform:scale(0.5);
+}
+
+.hidden{
+display:none;
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- FOTO 1 -->
+<div id="foto1" class="screen pink" style="display:flex">
+
+<h1>HEIIII VAROOOOO, APAA <br> KABAR NIHHHH???</h1>
+
+<div>
+
+<button onclick="show('foto3')">BAIK DONGG</button>
+
+<button onclick="show('foto2')">burukkk :(</button>
+
+</div>
+
+</div>
+
+
+<!-- FOTO 2 -->
+<div id="foto2" class="screen black">
+
+<p>
+are u okay?? kamu boleh curhat kok di wa AK???! <br>
+MOGA KAMUU OKE OKE <br>
+YESS YAAA, LOVYUUUU~
+</p>
+
+<div>
+
+<button class="red" onclick="wa()">CURHAT</button>
+
+<button class="red" onclick="show('foto3')">
+KLIK INI KLW MAW LIYAT YANK SELAMJUTNYH
+</button>
+
+</div>
+
+</div>
+
+
+<!-- FOTO 3 -->
+<div id="foto3" class="screen pink">
+
+<p>
+INI PILIHAN HANYA SEKALI DOANK!!<br><br>
+
+j-jadi gini... eumh!!! ak maw serius!!!!<br>
+K- KAMU MAW EGK JADI MAY BESTIES FOREPER??!!!<br>
+A-AKU TAW AK ANEH HMPH!!
+</p>
+
+<div>
+
+<button onclick="show('foto5')">MAW MAW</button>
+
+<button id="emoh">EMOH NAJONK</button>
+
+<button onclick="show('foto4')">ME MAW LEBIH</button>
+
+</div>
+
+</div>
+
+
+<!-- FOTO 4 -->
+<div id="foto4" class="screen pink">
+
+<p>
+E-EHHHHHH???!!!? v-varo-kun...<br>
+K-KENAPA KM PILIH INIII???! B-BAKA!!<br>
+K-KAMU PILIH INI?? j-jadi km maw jadi nyh aph? e-ehm!<br>
+c-chat wa ajh ok??!
+</p>
+
+<button onclick="wa()">
+ni pencet, langsung wa ok ok
+</button>
+
+</div>
+
+
+<!-- FOTO 5 -->
+<div id="foto5" class="screen pink">
+
+<h1>
+YAYYY MAKASIHHHH <br>
+AI WOP YU :DD
+</h1>
+
+<p>
+EMANK KEREN DUO GASYORRR <br>
+ANNA LOP PARO GASYOR PARAH
+</p>
+
+</div>
+
+
+
+<script>
+
+function show(id){
+
+document.querySelectorAll(".screen").forEach(s=>{
+s.style.display="none"
+})
+
+document.getElementById(id).style.display="flex"
+
+}
+
+
+function wa(){
+window.location.href="https://wa.me/qr/JTIIZUEYWG6TB1"
+}
+
+
+let emoh=document.getElementById("emoh")
+let size=1
+
+emoh.onclick=function(){
+
+size-=0.2
+emoh.style.transform="scale("+size+")"
+
+if(size<=0.4){
+emoh.style.display="none"
+}
+
+}
+
+</script>
+
+</body>
+</html>
